@@ -1,19 +1,39 @@
+![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Cleaning%20%26%20Analysis-purple.svg)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange.svg)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-lightblue.svg)
+![Data Analytics](https://img.shields.io/badge/Data%20Analytics-End--to--End%20Project-success.svg)
+![Dataset Size](https://img.shields.io/badge/Dataset-120k%2B%20Rows-informational.svg)
+![Business Insights](https://img.shields.io/badge/Business%20Insights-Actionable%20Recommendations-yellow.svg)
+![Internship Project](https://img.shields.io/badge/Internship-Data%20Analyst%20Project-brightgreen.svg)
+![Power BI Ready](https://img.shields.io/badge/Dashboard-Power%20BI%20%2F%20Tableau%20Ready-blueviolet.svg)
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+![Repo Size](https://img.shields.io/github/repo-size/rishvmiyani/Amazon-Dashboard)
+![Last Commit](https://img.shields.io/github/last-commit/rishvmiyani/Amazon-Dashboard)
+
 # Amazon Sales Analysis – Data Analytics Internship Project (Project ID: 78G0OL)
 
 ## 📌 Project Overview
 This project analyzes Amazon India sales data to generate actionable business insights for sales optimization, inventory planning, and customer experience improvement. The analysis covers overall sales performance, product and size preferences, fulfillment methods (Amazon vs Merchant), and geographical distribution of orders across Indian states.
 
 The project was completed as part of a Data Analyst internship task to:  
-> “Analyze and provide insights on Amazon Sales Report and deliver a comprehensive report with visualizations and recommendations.”[file:2]
+> “Analyze and provide insights on Amazon Sales Report and deliver a comprehensive report with visualizations and recommendations.”
 
 ---
 
 ## 🧾 Objectives
 
-1. **Sales Overview** – Understand total revenue, order volume, average order value, and returns.['data/processed/state_sales.csv']  
-2. **Product Analysis** – Identify top-performing categories and sizes to guide inventory decisions.['data/processed/product_sales.csv']  
-3. **Fulfillment Analysis** – Compare Amazon-fulfilled vs Merchant-fulfilled orders and their contribution to sales.['data/processed/fulfillment_analysis.csv']  
-4. **Customer / Geography Analysis** – Study state-wise sales distribution to identify key markets and growth regions. 
+1. **Sales Overview** – Understand total revenue, order volume, average order value, and returns.  
+   → [`data/processed/state_sales.csv`](data/processed/state_sales.csv)
+
+2. **Product Analysis** – Identify top-performing categories and sizes to guide inventory decisions.  
+   → [`data/processed/product_sales.csv`](data/processed/product_sales.csv)
+
+3. **Fulfillment Analysis** – Compare Amazon-fulfilled vs Merchant-fulfilled orders and their contribution to sales.  
+   → [`data/processed/fulfillment_analysis.csv`](data/processed/fulfillment_analysis.csv)
+
+4. **Customer / Geography Analysis** – Study state-wise sales distribution to identify key markets and growth regions.
+
 5. **Business Insights & Recommendations** – Provide clear, actionable suggestions to improve sales, reduce returns, and optimize operations.
 
 ---
@@ -23,130 +43,130 @@ The project was completed as part of a Data Analyst internship task to:
 Amazon-Dashboard/
 ├── data/
 │ ├── raw/
-│ │ └── Amazon-Sale-Report.csv # Original dataset
+│ │ └── Amazon-Sale-Report.csv
 │ └── processed/
-│ ├── cleaned_sales.csv # Cleaned dataset
-│ ├── product_sales.csv # Category & size level sales
-│ ├── fulfillment_analysis.csv # Amazon vs Merchant metrics
-│ └── state_sales.csv # State-wise revenue
-├── notebooks/ # (optional) exploratory notebooks
+│ ├── cleaned_sales.csv
+│ ├── product_sales.csv
+│ ├── fulfillment_analysis.csv
+│ └── state_sales.csv
+├── notebooks/
 ├── scripts/
-│ ├── clean_data.py # Data cleaning & preprocessing
-│ ├── analysis.py # KPI & aggregation calculations
-│ └── visualize.py # Chart generation scripts
+│ ├── clean_data.py
+│ ├── analysis.py
+│ └── visualize.py
 ├── reports/
 │ ├── figures/
-│ │ ├── product_sales.png # Sales by category & size
-│ │ ├── fulfillment_analysis.png # Fulfillment method pie chart
-│ │ └── state_sales.jpg # Sales by state bar chart
-│ ├── project_report.md # Markdown report
-│ └── Amazon_Sales_Analysis_Complete.pdf # Final PDF report (for submission)
+│ │ ├── product_sales.png
+│ │ ├── fulfillment_analysis.png
+│ │ └── state_sales.jpg
+│ ├── project_report.md
+│ └── Amazon_Sales_Analysis_Complete.pdf
 ├── docs/
-│ └── README.md # This documentation
-├── environment.yml # Conda environment (Python 3.12)
-└── LICENSE # Project license
+│ └── README.md
+├── environment.yml
+└── LICENSE
 
 ---
 
 ## 🧮 Data Source & Description
 
-- **File:** `data/raw/Amazon-Sale-Report.csv`  
-- **Rows:** 121,176 orders (after cleaning).
-- **Key Fields:**
-  - `Order ID`, `Date`, `Status` (Shipped, Cancelled, Returned, etc.)  
-  - `Fulfilment` (Amazon / Merchant)  
-  - `Sales Channel`, `ship-service-level`  
-  - `Category` (T-shirt, Shirt, Blazer, Perfume, Wallet, etc.)  
-  - `Size` (XS–6XL, Free)  
-  - `Qty`, `Amount`, `Currency`  
-  - Shipping city, state, postal code, country  
-  - `B2B`, `fulfilled-by`, flags for new / pending
+- **File:** [`data/raw/Amazon-Sale-Report.csv`](data/raw/Amazon-Sale-Report.csv)
+- **Rows:** 121,176 orders (after cleaning)
 
-Pre-processing steps include handling missing values, filtering invalid records, and deriving metrics such as return rate and state-wise totals.
+### Key Fields
+- Order ID, Date, Status  
+- Fulfilment (Amazon / Merchant)  
+- Sales Channel, ship-service-level  
+- Category (T-shirt, Shirt, Blazer, Perfume, Wallet, etc.)  
+- Size (XS–6XL, Free)  
+- Quantity, Amount, Currency  
+- Shipping city, state, postal code, country  
+
+Pre-processing includes handling missing values, filtering invalid records, and deriving metrics such as return rate and state-wise totals.
 
 ---
 
 ## ⚙️ Tech Stack
 
-- **Language:** Python 3.12  
-- **Libraries:**  
-  - `pandas` – data cleaning & aggregation  
-  - `matplotlib`, `seaborn` – visualizations  
-  - `jupyter` – interactive analysis (if notebooks used)  
-- **Environment:** Managed via `environment.yml` for reproducibility.
+- **Language:** Python 3.12
+- **Libraries:**
+  - pandas – data cleaning & aggregation
+  - matplotlib, seaborn – visualizations
+  - jupyter – exploratory analysis
+- **Environment:** Managed via `environment.yml`
 
-To create the environment:
+### Environment Setup
 
 conda env create -f environment.yml
 conda activate amazon-dashboard
+▶️ How to Run the Project
+From the project root directory:
 
-
----
-
-## ▶️ How to Run the Project
-
-From the project root:
-
-1. **Clean the raw data**
-
+1️⃣ Clean the Raw Data
+bash
+Copy code
 python scripts/clean_data.py
+Output:
+→ data/processed/cleaned_sales.csv
 
-Outputs: `data/processed/cleaned_sales.csv`.
-
-2. **Generate aggregations & KPIs**
-
+2️⃣ Generate KPIs & Aggregations
+bash
+Copy code
 python scripts/analysis.py
+Outputs:
 
-Outputs: `product_sales.csv`, `fulfillment_analysis.csv`, `state_sales.csv` in `data/processed/`.
+data/processed/product_sales.csv
 
-3. **Create visualizations**
+data/processed/fulfillment_analysis.csv
 
+data/processed/state_sales.csv
+
+3️⃣ Generate Visualizations
+bash
+Copy code
 python scripts/visualize.py
+Outputs:
 
-Outputs charts in `reports/figures/`:
-- `product_sales.png`
-- `fulfillment_analysis.png`
-- `state_sales.jpg`[file:34][file:35][file:36]
+reports/figures/product_sales.png
 
-4. **View final report**
+reports/figures/fulfillment_analysis.png
 
-Open `reports/Amazon_Sales_Analysis_Complete.pdf` (or `project_report.md`) to see the complete narrative with charts and recommendations.[file:37]
+reports/figures/state_sales.jpg
 
----
+4️⃣ View Final Report
+reports/Amazon_Sales_Analysis_Complete.pdf
 
-## 📊 Key Results (Summary)
+reports/project_report.md
 
-- **Total Sales:** ~₹7,85,90,170 (7.86 crore).[file:37]  
-- **Total Orders:** 121,176.[file:37]  
-- **Average Order Value:** ~₹648.56.[file:37]  
-- **Return Rate:** 15.8% (19,146 returned orders).[file:37]  
+📊 Key Results (Summary)
 
-- **Top Categories (by revenue):** Blazer, Perfume, Shirt, with T‑shirts overall leading by volume.[file:34][file:37]  
-- **Top Sizes:** XXL, XL, and Free size products.[file:34][file:37]  
+Total Sales: ~₹7.86 Crore
+Total Orders: 121,176
+Average Order Value: ~₹648.56
+Return Rate: 15.8%
+Top Categories: Blazer, Perfume, Shirt
+Top Sizes: XXL, XL, Free
+Fulfillment Split: Amazon – 69.1%, Merchant – 30.9%
 
-- **Fulfillment Split:** Amazon – 69.1%, Merchant – 30.9%.[file:35][file:37]  
+Top States: Maharashtra, Karnataka, Telangana, Uttar Pradesh, Tamil Nadu
 
-- **Top 5 States by Sales:** Maharashtra, Karnataka, Telangana, Uttar Pradesh, Tamil Nadu.[file:36][file:37]
+💡 Business Insights
 
-For the full detailed interpretation, see `reports/Amazon_Sales_Analysis_Complete.pdf`.[file:37]
+High revenue concentration in fashion categories and larger sizes indicates inventory prioritization opportunities.
+Elevated return rate suggests sizing or expectation mismatch; improving size charts and descriptions can reduce returns.
+Amazon-fulfilled orders dominate, reflecting customer trust in logistics.
+Sales are concentrated in a few states, while several regions show untapped growth potential.
 
----
+🚀 Future Enhancements
 
-## 💡 Business Insights (Highlights)
+Build an interactive dashboard using Power BI, Tableau, or Streamlit.
 
-- Revenue is concentrated in fashion categories and larger sizes (XXL/XL), suggesting the need to prioritize inventory in these segments.[file:34][file:37]  
-- High return rate indicates potential sizing or expectation mismatch; improving size charts and product details is critical.[file:37]  
-- Amazon-fulfilled orders dominate, indicating trust in Amazon logistics; Merchant fulfillment performance should be aligned via clear SLAs.[file:35][file:2]  
-- A handful of states drive most revenue, but there is a long tail of underpenetrated regions with growth potential.[file:36][file:2]
+Add customer-level analysis (CLV, RFM) if customer IDs are available.
 
----
+Automate the pipeline using Airflow or Cron.
 
-## 🚀 Future Work
+Add unit tests and CI/CD using GitHub Actions.
 
-- Build an interactive dashboard (Power BI / Tableau / Streamlit) on top of current aggregations.  
-- Add customer‑level metrics if unique customer IDs become available (CLV, RFM analysis).  
-- Automate pipeline using a scheduler (Airflow / Cron) for periodic refresh.  
-- Add tests (unit tests for scripts) and CI workflow (GitHub Actions).[web:17][web:49]
 
 ---
 
@@ -159,4 +179,4 @@ For the full detailed interpretation, see `reports/Amazon_Sales_Analysis_Complet
 
 ## 📄 License
 
-This project is licensed under the **MIT License** – see the [LICENSE](../LICENSE) file for details.[web:40][web:55]
+This project is licensed under the **MIT License** – see the [LICENSE](../LICENSE) file for details.
