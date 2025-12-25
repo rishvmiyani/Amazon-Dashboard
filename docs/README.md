@@ -137,6 +137,7 @@ reports/figures/state_sales.jpg
 reports/Amazon_Sales_Analysis_Complete.pdf
 
 reports/project_report.md
+---
 
 📊 Key Results (Summary)
 
@@ -156,12 +157,16 @@ reports/project_report.md
 
 -Top States: Maharashtra, Karnataka, Telangana, Uttar Pradesh, Tamil Nadu
 
+---
+
 💡 Business Insights
 
 High revenue concentration in fashion categories and larger sizes indicates inventory prioritization opportunities.
 Elevated return rate suggests sizing or expectation mismatch; improving size charts and descriptions can reduce returns.
 Amazon-fulfilled orders dominate, reflecting customer trust in logistics.
 Sales are concentrated in a few states, while several regions show untapped growth potential.
+
+---
 
 🚀 Future Enhancements
 
