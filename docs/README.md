@@ -10,9 +10,9 @@ The project was completed as part of a Data Analyst internship task to:
 
 ## 🧾 Objectives
 
-1. **Sales Overview** – Understand total revenue, order volume, average order value, and returns.[data/processed/state_sales.csv]  
-2. **Product Analysis** – Identify top-performing categories and sizes to guide inventory decisions.[data/processed/product_sales.csv]  
-3. **Fulfillment Analysis** – Compare Amazon-fulfilled vs Merchant-fulfilled orders and their contribution to sales.[data/processed/fulfillment_analysis.csv]  
+1. **Sales Overview** – Understand total revenue, order volume, average order value, and returns.['data/processed/state_sales.csv']  
+2. **Product Analysis** – Identify top-performing categories and sizes to guide inventory decisions.['data/processed/product_sales.csv']  
+3. **Fulfillment Analysis** – Compare Amazon-fulfilled vs Merchant-fulfilled orders and their contribution to sales.['data/processed/fulfillment_analysis.csv']  
 4. **Customer / Geography Analysis** – Study state-wise sales distribution to identify key markets and growth regions. 
 5. **Business Insights & Recommendations** – Provide clear, actionable suggestions to improve sales, reduce returns, and optimize operations.
 
