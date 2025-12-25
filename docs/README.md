@@ -38,6 +38,31 @@ The project was completed as part of a Data Analyst internship task to:
 
 ---
 
+## 📈 Dashboard Features
+| Feature | Description |
+|----------|-------------|
+| **Sales Overview** | Displays total sales, profit, and quantity sold. |
+| **Category Analysis** | Compares sales performance across product categories. |
+| **Regional Insights** | Shows top-performing states and cities. |
+| **Customer Segment Analysis** | Visualizes how different customer segments contribute to total revenue. |
+| **Order Trends** | Tracks monthly and yearly sales performance. |
+| **Profitability Metrics** | Highlights top 10 profitable products and least-performing items. |
+
+---
+## 🖼️ Dashboard Preview
+
+### 🔹 Sales Overview Dashboard
+<img width="1148" height="635" alt="Screenshot 211831" src="https://github.com/rishvmiyani/Amazon-Dashboard/blob/main/reports/figures/fulfillment_analysis.png" />
+
+
+### 🔹 Product & Category Insights
+<img width="1166" height="641" alt="Screenshot 211853" src="https://github.com/rishvmiyani/Amazon-Dashboard/blob/main/reports/figures/product_sales.png" />
+
+
+### 🔹 Regional Analysis
+<img width="1171" height="652" alt="Screenshot 211907" src="https://github.com/rishvmiyani/Amazon-Dashboard/blob/main/reports/figures/state_sales.png" />
+
+---
 ## 📂 Repository Structure
 
 Amazon-Dashboard/
@@ -88,6 +113,10 @@ Pre-processing includes handling missing values, filtering invalid records, and 
 
 ## ⚙️ Tech Stack
 
+- **Power BI** – Dashboard creation and data visualization  
+- **Microsoft Excel / CSV** – Dataset management  
+- **Data Cleaning** – Power Query  
+- **DAX (Data Analysis Expressions)** – Custom calculations and measures
 - **Language:** Python 3.12
 - **Libraries:**
   - pandas – data cleaning & aggregation
@@ -97,67 +126,32 @@ Pre-processing includes handling missing values, filtering invalid records, and 
 
 ---
 
-### Environment Setup
-
-conda env create -f environment.yml
-conda activate amazon-dashboard
-▶️ How to Run the Project
-From the project root directory:
-
-1️⃣ Clean the Raw Data
-bash
-Copy code
-python scripts/clean_data.py
-Output:
-→ data/processed/cleaned_sales.csv
-
-2️⃣ Generate KPIs & Aggregations
-bash
-Copy code
-python scripts/analysis.py
-Outputs:
-
-data/processed/product_sales.csv
-
-data/processed/fulfillment_analysis.csv
-
-data/processed/state_sales.csv
-
-3️⃣ Generate Visualizations
-bash
-Copy code
-python scripts/visualize.py
-Outputs:
-
-reports/figures/product_sales.png
-
-reports/figures/fulfillment_analysis.png
-
-reports/figures/state_sales.jpg
-
-4️⃣ View Final Report
-reports/Amazon_Sales_Analysis_Complete.pdf
-
-reports/project_report.md
----
 
 📊 Key Results (Summary)
 
 -Total Sales: ~₹7.86 Crore
-
 -Total Orders: 121,176
-
 -Average Order Value: ~₹648.56
-
 -Return Rate: 15.8%
-
 -Top Categories: Blazer, Perfume, Shirt
-
 -Top Sizes: XXL, XL, Free
-
 -Fulfillment Split: Amazon – 69.1%, Merchant – 30.9%
-
 -Top States: Maharashtra, Karnataka, Telangana, Uttar Pradesh, Tamil Nadu
+
+---
+
+## 💡 Key Insights
+- Identified top-selling categories driving the majority of revenue.  
+- Highlighted seasonal trends affecting order volumes.  
+- Detected low-performing regions needing marketing focus.  
+- Visualized customer segmentation to target specific demographics.
+
+---
+
+## 🚀 How to Use
+1. Download the repository or clone it:
+   ```bash
+   git clone https://github.com/rishvmiyani/Amazon-Dashboard.git
 
 ---
 
