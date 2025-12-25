@@ -95,6 +95,8 @@ Pre-processing includes handling missing values, filtering invalid records, and 
   - jupyter – exploratory analysis
 - **Environment:** Managed via `environment.yml`
 
+---
+
 ### Environment Setup
 
 conda env create -f environment.yml
