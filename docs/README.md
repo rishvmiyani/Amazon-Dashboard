@@ -140,15 +140,21 @@ reports/project_report.md
 
 📊 Key Results (Summary)
 
-Total Sales: ~₹7.86 Crore
-Total Orders: 121,176
-Average Order Value: ~₹648.56
-Return Rate: 15.8%
-Top Categories: Blazer, Perfume, Shirt
-Top Sizes: XXL, XL, Free
-Fulfillment Split: Amazon – 69.1%, Merchant – 30.9%
+-Total Sales: ~₹7.86 Crore
 
-Top States: Maharashtra, Karnataka, Telangana, Uttar Pradesh, Tamil Nadu
+-Total Orders: 121,176
+
+-Average Order Value: ~₹648.56
+
+-Return Rate: 15.8%
+
+-Top Categories: Blazer, Perfume, Shirt
+
+-Top Sizes: XXL, XL, Free
+
+-Fulfillment Split: Amazon – 69.1%, Merchant – 30.9%
+
+-Top States: Maharashtra, Karnataka, Telangana, Uttar Pradesh, Tamil Nadu
 
 💡 Business Insights
 
