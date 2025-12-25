@@ -1,0 +1,9 @@
+name: amazon-dashboard
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pandas
+  - matplotlib
+  - seaborn
+  - jupyter
