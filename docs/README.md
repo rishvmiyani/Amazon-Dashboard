@@ -95,7 +95,7 @@ Amazon-Dashboard/
 
 ## 🧮 Data Source & Description
 
-- **File:** [`data/raw/Amazon-Sale-Report.csv`](data/raw/Amazon-Sale-Report.csv)
+- **File:** [`data/raw/Amazon-Sale-Report.csv`](/data/raw/Amazon-Sale-Report.csv)
 - **Rows:** 121,176 orders (after cleaning)
 
 ### Key Fields
